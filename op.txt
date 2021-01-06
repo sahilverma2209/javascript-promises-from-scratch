@@ -1,0 +1,81 @@
+(base) Sahils-MacBook-Pro:pinky-promise sahilverma$ node index.js
+create promise with id =  001
+then called 001
+create promise with id =  79
+returning from promise - 001  a then promise := 79
+then called 79
+create promise with id =  81
+returning from promise - 79  a then promise := 81
+catch called 81
+create promise with id =  21
+returning from catch - 81  a catch promise := 21
+create promise with id =  55
+returning from finally - 21  := 55
+running parent promise code
+
+Resolving promise =  001
+time to propagate
+resolve all thens =  1
+fullfill then -  79
+first then running..
+characters :  8519
+create promise with id =  002
+then called 002
+create promise with id =  94
+returning from promise - 002  a then promise := 94
+
+Resolving promise =  002
+time to propagate
+resolve all thens =  1
+fullfill then -  94
+
+Resolving promise =  79
+time to propagate
+resolve all thens =  1
+fullfill then -  81
+2nd then running..
+cnst stts = {
+    PENDING: 'pndng',
+    FULFILLED: 'flflld',
+    REJECTED: 'rjctd',
+}
+
+cnst sThnbl = mybPrms => mybPrms && typf mybPrms.thn === 'fnctn'
+
+cnst prmsId = {}
+
+cnst pd = () => {
+    lt d = Mth.flr((Mth.rndm() * (100 - 5) + 5))
+    f(!prmsId[d]){
+        prmsId[d] = 1
+        rtrn d
+    } ls rtrn pd()
+}
+ 
+fnctn MyPrms(cmpttn, d) {
+    // cnstrctr(cmpttn, d){
+    cnsl.lg('crt prms wth d = ', d)
+    ths._stt = stts.PENDING
+    ths._d = d
+    ths._vl = ndfnd;
+    ths._rsn = ndfnd;
+
+    th
+
+Resolving promise =  81
+time to propagate
+resolve all thens =  1
+fullfill then -  21
+
+Resolving promise =  21
+time to propagate
+resolve all thens =  0
+All done
+
+Resolving promise =  55
+time to propagate
+resolve all thens =  0
+
+Resolving promise =  94
+time to propagate
+resolve all thens =  0
